@@ -17,7 +17,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
-        val apiBase = providers.gradleProperty("API_BASE_URL").getOrElse("https://engai.vercel.app/api")
+        val apiBase = providers.gradleProperty("API_BASE_URL").getOrElse("https://engai.vercel.app")
         buildConfigField("String", "API_BASE_URL", "\"$apiBase\"")
     }
 
