@@ -2,7 +2,7 @@ import { AppError } from "@/lib/errors";
 import { fail } from "@/lib/response";
 import { clientIp, rateLimit } from "@/lib/rateLimit";
 
-/** Wraps a route handler: rate limiting + consistent error responses. */
+/** Wraps a route handler: rate limiting + consistent error responsedfdf. */
 export function apiHandler(handler, { limit = 30 } = {}) {
   return async (request, context) => {
     try {
