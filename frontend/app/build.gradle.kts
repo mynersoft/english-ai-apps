@@ -12,12 +12,12 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.englishai.app"
+        applicationId = "com.mahir.engai"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
-        val apiBase = providers.gradleProperty("API_BASE_URL").getOrElse("https://your-backend.vercel.app/")
+        val apiBase = providers.gradleProperty("API_BASE_URL").getOrElse("https://engai.vercel.app/api")
         buildConfigField("String", "API_BASE_URL", "\"$apiBase\"")
     }
 
